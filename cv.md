@@ -277,6 +277,6 @@ font-size:2rem;
 7. Languages
   * English - C1(Advanced) 
   * French - B1(Intermediate)
-  * I am currently studying for my bachelor's degree in Intercultural Communication at the Institute  Of  foreign languages at МГПУ (Московский Городской Педагогический Университет)(Final year) which gives me ample opportunity for daily language practice
+  * I am currently studying for my bachelor's degree in Intercultural Communication at the Institute  Of  foreign languages at МГПУ (Московский Городской Педагогический Университет)(4th year) which gives me ample opportunity for daily language practice
 
 
