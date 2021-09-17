@@ -179,6 +179,9 @@ margin-bottom:3%;
   background-color: var(--sidebar-blue);
   color: var(--text-light);
 }
+.sidebar ul{
+  padding-left:10px;
+}
 .sidebar section{
 margin-top:30%;  
 }
