@@ -38,7 +38,11 @@ a{
 .occupation {
   color: var(--header-blue);
 }
-
+.other-projects details{
+display:flex; 
+justify-content:center;
+align-items:center; 
+}
 .projects-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));  
@@ -46,6 +50,37 @@ width:100%;
 text-align:center;
 grid-gap:4rem;
 margin-bottom:3%;
+}
+
+.projects-grid a{
+  width:20em;
+  height:10em;
+}
+.museum{
+  background-image: url(museum.png);
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+.c-player{
+  background-image: url(custom-video.png);
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+
+}
+.v-slider{
+  background-image: url(slider.png);
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+.portfolio{
+  background-image: url(Portfolio.png);
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
 }
 
 .projects-grid img{
