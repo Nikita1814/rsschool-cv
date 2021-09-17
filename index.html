@@ -11,13 +11,21 @@
 
 <body class="CV">
     <div class= "cv-wrapper">
-
+    <nav class ="burger-menu">
+        <ul>
+            <li><a href="#summary"><p>Summary</p></a></li>
+            <li><a href="#code-ex"><p>Code experience</p></a></li>
+            <li><a href="#projects"><p>Projects</p></a></li>
+            <li><a href="#work-exp"><p>Working experience</p></a></li>
+            <li><a href="#edu"><p>Education</p></a></li>
+        </ul>
+    </nav>
     <header class="header">
         <h1 class="name">Nikita Kravchenko</h1>
         <h2 class="occupation">Linguist//soon-to-be Junior frontend developer</h2>
     </header>
     <main class="content">
-        <section class="personal-summmary">
+        <section class="personal-summmary" id="summary">
             <h3 class="personal-summary__header">Personal summary: qualities, goals, aspirations</h3>
             <p class="personal-summary__text">A goal-driven, career oriented, linguistics bachelor currently in the
                 process of radically switching my working field in hopes of finding a more gainful, creativity-driven,
@@ -32,7 +40,7 @@
                 fulfilled or accomplished until the task entrusted to me is completed
             <p>
         </section>
-        <section class="code-example">
+        <section class="code-example" id="code-ex">
             <h3 class="code-example__header">Code Example</h3>
             <p class="code-example__html-designation">Here is an example of a Binary search tree validation function written as part of this codewars <a href ="https://www.codewars.com/kata/588534713472944a9e000029">Kata</a></p>
             <div class="code-window">
@@ -73,7 +81,7 @@
         </pre>
             </div>
         </section>
-        <section class="other-projects">
+        <section class="other-projects" id ="projects">
             <h3 class="other-projects-header"> Projects</h3>
             <details>
                 <summary>Here are some of the projects done as part of various Front-end courses</summary>
@@ -98,7 +106,7 @@
             </details>
             
         </section>
-        <section class="working-experience">
+        <section class="working-experience" id = "work-exp">
             <h3 class="working-experience__header">Working experience</h3>
             <ul class="working-experience__list">
                 <li class="working-experience__list__item">
@@ -113,7 +121,7 @@
                 </li>
             </ul>
         </section>
-        <section class="education">
+        <section class="education" id ="edu">
             <h3 class="education__header">Education</h3>
             <ul class="education_list">
                 <li class="education__list__item">
@@ -139,8 +147,11 @@
     </main>
     <aside class="sidebar">
         <div class="sidebar__content">
+            <button class="burger-button">
             <img src="The_Almighty_Loaf.jpg" alt="an artistic rendition of my charming visage" class="sidebar__photo"
                 height="150" width="150">
+            </button>
+               <p>click me</p>
             <section class="sidebar__contacts">
                 <h3 class="sidebar__contacts__header">Contacts</h3>
                 <ul class="sidebar__contacts__list">
@@ -151,7 +162,7 @@
                     <a class="sidebar__contacts__list__item__github-link">https://github.com/Nikita1814</a>
                     </li>
                     <li class="sidebar__contacts__list__item">
-                        <p>89629418778 - tel</p>
+                        <p>8-962-941-87-78 - tel</p>
                     </li>
                 </ul>
             </section>
@@ -196,6 +207,7 @@
         </div>
     </footer>
 </div>
+<script src="script.js"></script>
 </body>
 
 </html>
