@@ -15,12 +15,15 @@ body {
   justify-content: center;
   align-items: center;
  font-family: sans-serif;
- 
+ font-size:14px;
 }
 .cv-wrapper{
   max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
     
 }
 .burger-menu{
@@ -240,4 +243,51 @@ margin-top:30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@media( max-width:620px){
+  body{
+   font-size:6px; 
+  }
+  .sidebar{
+    position:static;
+    width:100%;
+    padding:0;
+    font-size:12px;
+  }
+  .sidebar section{
+    margin-top:10%;  
+  }
+  .sidebar h3{
+    text-align:center;
+  }
+  .footer__content,.header, .content{
+   padding-left:1%;
+   padding-right:1%
+  } 
+  .burger-menu ul{
+    padding-left:0%
+  }
+}
+
+@media( max-width:320px){
+  body{
+   font-size:4px; 
+  }
+  .sidebar{
+    position:static;
+    width:100%;
+    padding:0;
+    font-size:14px;
+  }
+  .sidebar h3{
+    text-align:center;
+  }
+  .footer__content,.header, .content {
+   padding-left:1%;
+   padding-right:1%
+  } 
+  .burger-menu ul{
+    padding-left:0%
+  }
 }
