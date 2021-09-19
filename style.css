@@ -28,7 +28,7 @@ body {
 }
 .burger-menu{
   background-color: var( --sidebar-blue);
-  color: #fdfdfd;
+  /*color: #fdfdfd;*/
   height:150px;
   position:absolute ;
   width:0;
@@ -41,7 +41,13 @@ body {
 }
 .expanded{
   width:100%;
- 
+}
+.contracted-link{
+color:#345383; 
+
+}
+.expanded-link{
+color:#fdfdfd;
 }
 .spin{
 /*animation-name : spin;
@@ -71,9 +77,7 @@ list-style-type: none;
 
  color:#fdfdfd;
 }
-.burger-menu li:hover{
 
-}
 .burger-menu a:hover {
 background-color:#fdfdfd;
 color:#345383 ;
@@ -82,7 +86,7 @@ color:#345383 ;
 .burger-menu a{
 height:100%;
 width:100%;
-color:#fdfdfd;
+;
 display:flex;
 justify-content: center;
 align-items:center;
@@ -248,7 +252,7 @@ margin-top:30%;
   align-items: center;
 }
 
-@media( max-width:620px){
+@media( max-width:800px){
   body{
    font-size:6px; 
   }
