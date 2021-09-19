@@ -5,6 +5,7 @@ burgerBtn.addEventListener('click', () =>{
     burgerMenu.classList.toggle('expanded')
     for(i = 0; i<burgerLinks.length; i++) {
     burgerLinks[i].classList.toggle('expanded-link')
+    burgerLinks[i].classList.toggle('contracted-link')
     }
     burgerBtn.classList.toggle('spin') 
    

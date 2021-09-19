@@ -28,7 +28,6 @@ body {
 }
 .burger-menu{
   background-color: var( --sidebar-blue);
-  /*color: #fdfdfd;*/
   height:150px;
   position:absolute ;
   width:0;
@@ -43,16 +42,13 @@ body {
   width:100%;
 }
 .contracted-link{
-color:#345383; 
-
-}
+  color:#fdfdfd;
+  }
 .expanded-link{
 color:#fdfdfd;
 }
 .spin{
-/*animation-name : spin;
-animation-timing-function:ease-in-out;
-animation-duration:0.5s;*/
+
 transform: rotate(360deg)
 }
 @keyframes spin{
@@ -63,7 +59,7 @@ padding-left:25%;
 height:100%;
 width:100%;  
 display:flex;
-/*justify-content: space-around;*/
+
 align-items:center;
 list-style-type: none;
 
@@ -78,7 +74,7 @@ list-style-type: none;
  color:#fdfdfd;
 }
 
-.burger-menu a:hover {
+.burger-menu a:hover{
 background-color:#fdfdfd;
 color:#345383 ;
   
@@ -86,7 +82,6 @@ color:#345383 ;
 .burger-menu a{
 height:100%;
 width:100%;
-;
 display:flex;
 justify-content: center;
 align-items:center;
@@ -221,7 +216,7 @@ margin-top:30%;
   padding-left: 5px;
   border-radius: 10px;
   overflow: auto;
-  background-color: lightgrey;
+  background-color: gainsboro;
 }
 
 .sidebar__photo {
@@ -251,8 +246,23 @@ margin-top:30%;
   justify-content: space-around;
   align-items: center;
 }
-
+.footer a {
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  transition: color 0.5s ease-in-out;
+  transition:background-color 0.5s ease-in-out;
+}
 @media( max-width:800px){
+  .expanded-link{
+    color:#fdfdfd;
+    }
+  
+  .contracted-link{
+    color:#345383; 
+    }
+
   body{
    font-size:6px; 
   }
@@ -283,6 +293,12 @@ margin-top:30%;
 }
 
 @media( max-width:320px){
+  .expanded-link{
+    color:#fdfdfd;
+    }
+  .contracted-link{
+    color:#345383; 
+    }
   body{
    font-size:4px; 
   }
