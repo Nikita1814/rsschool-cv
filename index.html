@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV-Nikita Kravchenko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="CV">
+    <div class="cv-wrapper">
+        <nav class="burger-menu">
+            <ul>
+                <li><a class="burger-link contracted-link" href="#summary">
+                        <p>Summary</p>
+                    </a></li>
+                <li><a class="burger-link contracted-link" href="#code-ex">
+                        <p>Code experience</p>
+                    </a></li>
+                <li><a class="burger-link contracted-link" href="#projects">
+                        <p>Projects</p>
+                    </a></li>
+                <li><a class="burger-link contracted-link" href="#work-exp">
+                        <p>Working experience</p>
+                    </a></li>
+                <li><a class="burger-link contracted-link" href="#edu">
+                        <p>Education</p>
+                    </a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <h1 class="name">Nikita Kravchenko</h1>
+            <h2 class="occupation">Linguist//soon-to-be Junior frontend developer</h2>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__content">
+                <button class="burger-button">
+                    <img src="The_Almighty_Loaf.jpg" alt="an artistic rendition of my charming visage"
+                        class="sidebar__photo">
+                </button>
+                <p>click me</p>
+                <section class="sidebar__contacts">
+                    <h3 class="sidebar__contacts__header">Contacts</h3>
+                    <ul class="sidebar__contacts__list">
+                        <li class="sidebar__contacts__list__item">
+                            <p> <i class="fas fa-envelope"></i> kravchenko1814@gmail.com </p>
+                        </li>
+                        <li class="sidebar__contacts__list__item">
+                            <a class="sidebar__contacts__list__item__github-link"> <i class="fab fa-github"></i>
+                                https://github.com/Nikita1814</a>
+                        </li>
+                        <li class="sidebar__contacts__list__item">
+                            <p><i class="fas fa-mobile-alt"></i> 8-962-941-87-78</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="sidebar__skills-and-aptitudes">
+                    <h3 class="sidebar__skills-and-aptitudes">Skills</h3>
+                    <ul class="sidebar__skills-and-aptitudes__list">
+                        <li class="sidebar__skills-and-aptitudes__list__itam">
+                            <p> <i class="fab fa-html5"></i> / <i class="fab fa-css3-alt"></i> A basic understanding of
+                                HTML and CSS</p>
+                        </li>
+                        <li class="sidebar__skills-and-aptitudes__list__itam">
+                            <p><i class="fab fa-js"></i> A surface level understanding of JS</p>
+                        </li>
+                        <li class="sidebar__skills-and-aptitudes__list__itam">
+                            <p><i class="fab fa-git-alt"></i> Relative familiarity with version control systems (namely
+                                Git) </p>
+                        </li>
+                        <li class="sidebar__skills-and-aptitudes__list__itam">
+                            <p>Experience of working with the VScode development tool</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="sidebar__languages">
+                    <h3 class="languages__header">Linguistic aptitudes</h3>
+                    <ul class="languages__list">
+                        <li class="languages__list__item">
+                            <p>English - C1(Advanced) </p>
+                        </li>
+                        <li class="languages__list__item">
+                            <p>French - B1(Intermediate)</p>
+                        </li>
+                    </ul>
+                    <p class="languages__practice info"> Both practiced 40 hours a week (about a 50/50 split) as part of
+                        my university's curriculum</p>
+                </section>
+            </div>
+        </aside>
+        <main class="content">
+            <section class="personal-summmary" id="summary">
+                <h3 class="personal-summary__header">Personal summary: qualities, goals, aspirations</h3>
+                <p class="personal-summary__text">A goal-driven, career oriented, linguistics bachelor currently in the
+                    process of radically switching my working field in hopes of finding a more gainful,
+                    creativity-driven,
+                    and mentally stimulating employment than my current educational curriculum offers.
+                    Among my strong sides aside from my rigid focus I could number diligence and punctuality concerning
+                    the
+                    accomplishment of my duties and their respective timeframes, relative situational adaptability and
+                    mental flexibility, an extreme openness to communication especially so in a foreign language (as it
+                    remains a passion of mine) as well as a willingness for constant self-development and learning which
+                    is
+                    to be expected from the Junior web developer position.
+                    My weak sides come as the result of my strengths: a relentless perfectionism and dedication to a
+                    successful accomplishment of delegated tasks which has a side effect of me not being able to feel
+                    fulfilled or accomplished until the task entrusted to me is completed
+                <p>
+            </section>
+            <section class="code-example" id="code-ex">
+                <h3 class="code-example__header">Code Example</h3>
+                <p class="code-example__html-designation">Here is an example of a Binary search tree validation function
+                    written as part of this codewars <a
+                        href="https://www.codewars.com/kata/588534713472944a9e000029">Kata</a></p>
+                <div class="code-window">
+                    <pre class="code-example__js">
+  <code class="language-javascript" > 
+               // This is here as documentation. The nodes in the tree are instances of
+               // this class. You don't need to change this implementation.
+                class Node {
+                  constructor(value, left = null, right = null){
+                    this.value = value;
+                    this.left = left;
+                    this.right = right;
+                  }
+                }
+                
+                const isBST = (node) => {
+                  let validArr = [];
+                  trav(node);
+                  function trav(node) {
+                    if (node) {
+                      trav(node.left);
+                      validArr.push(node.value);
+                      trav(node.right);
+                    }
+                  }
+                  let sortedValidArr = validArr.map(x => x).sort((a, b) => {return a - b;}).join("");
+                  let invSortedValidArr = validArr.map(x => x).sort((a, b) => {return b - a;}).join("");
+                  let strValidArr = validArr.join("");
+                
+                  if (strValidArr === sortedValidArr || strValidArr === invSortedValidArr) {
+                    return true;
+                  } else {
+                    return false;
+                  }
+                };
+              
+            </code>
+        </pre>
+                </div>
+            </section>
+            <section class="other-projects" id="projects">
+                <h3 class="other-projects-header"> Projects</h3>
+                <details>
+                    <summary>Click here to see some of the projects I've done as part of various Front-end courses
+                    </summary>
+                    <div class="projects-grid">
+                        <a href="https://rolling-scopes-school.github.io/nikita1814-JSFEPRESCHOOL/museum"
+                            target="_blank" class="projects-grid-item museum">
+
+                            <p class="projects-grid-item-title">A Museum page</p>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/nikita1814-JSFEPRESCHOOL/vertical-slider"
+                            target="_blank" class="projects-grid-item v-slider">
+
+                            <p class="projects-grid-item-title">A custom vertical slider example</p>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/nikita1814-JSFEPRESCHOOL/custom-video-player/"
+                            target="_blank" class="projects-grid-item c-player">
+
+                            <p class="projects-grid-item-title">A custom video player example</p>
+                        </a>
+                        <a href="https://codepen.io/No11814/pen/KKarmbN" target="_blank"
+                            class="projects-grid-item portfolio">
+
+                            <p class="projects-grid-item-title">A portfolio page</p>
+                        </a>
+                    </div>
+                </details>
+
+            </section>
+            <section class="working-experience" id="work-exp">
+                <h3 class="working-experience__header">Working experience</h3>
+                <ul class="working-experience__list">
+                    <li class="working-experience__list__item">
+                        <p>I possess no commercial working experience in the IT field yet due to my as of yet limited
+                            skillset. I do however hope to remedy that fact with zelous study of the free front end
+                            development course so generously provided to me by the RS school team </p>
+                    </li>
+                    <li class="working-experience__list__item">
+                        <p>I have created several pages on the course of the Freecodecamp Responsive Web Design course,
+                            you
+                            may see them on my codepen.io page: <a
+                                class="working-experience__codepen-link">https://codepen.io/No11814/pens/showcase</a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="education" id="edu">
+                <h3 class="education__header">Education</h3>
+                <ul class="education_list">
+                    <li class="education__list__item">
+                        <p>Bachelors degree in Linguistics(french,english) at МГПУ (Московский Городской Педагогический
+                            Университет)[4th year - in progress]</p>
+                    </li>
+                    <li class="education__list__item">
+                        <p>Feecodecamp Responsive web design course - <a
+                                class="education__list__certification-link">https://www.freecodecamp.org/certification/fcc1bfd14d8-d4e1-418f-9406-6d23b599a315/responsive-web-design</a>
+                        </p>
+                    </li>
+                    <li class="education__list__item">
+                        <p>JS / FRONT-END. STAGE 0 at RS school</p>
+                    </li>
+                    <li class="education__list__item">
+                        <p>JS / FRONT-END. STAGE 1 at RS school [in progress] </p>
+                    </li>
+                </ul>
+            </section>
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <a href="https://github.com/Nikita1814" class="footer__github-link"><img src="git.png" alt="git logo"
+                        class="git-logo" height="60" width="60"> </a>
+                <h3>2021</h3>
+                <a href="https://rs.school/js-stage0/" class="footer__course-link"><img src="rs_school.svg"
+                        alt="rs school logo" class="course-plug__logo" height="60" width="60"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
