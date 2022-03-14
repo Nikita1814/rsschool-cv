@@ -158,6 +158,10 @@ h2 {
   color: var(--text-light);
   margin: 0;
 }
+.projects-grid-item{
+  background-size:cover;
+  background-repeat:no-repeat;
+}
 
 .sidebar {
   position: absolute;
@@ -254,6 +258,16 @@ h2 {
   align-items: center;
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+}
+
+.christmass-app {
+  background-image: url(fir-tree.png);
+}
+.momentum {
+  background-image: url(momentum.png);
+}
+.rs-lang {
+  background-image: url(rs-lang.png);
 }
 @media (max-width: 800px) {
   .expanded-link {
